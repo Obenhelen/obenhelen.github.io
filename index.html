@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software Engineering graduate portfolio showcasing web development, programming, and digital skills.">
+  <title>Oben Helen | Software Engineering Portfolio</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #647087;
+      --paper: #f7f8fc;
+      --white: #ffffff;
+      --accent: #5265d8;
+      --accent-dark: #3548b5;
+      --line: #e5e8f1;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1060px, 90%); margin: 0 auto; }
+    header {
+      background: rgba(255,255,255,.94);
+      border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 5;
+      backdrop-filter: blur(10px);
+    }
+    nav {
+      min-height: 68px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+    }
+    .brand { font-weight: 800; letter-spacing: -.4px; text-decoration: none; }
+    .navlinks { display: flex; gap: 22px; flex-wrap: wrap; }
+    .navlinks a { color: var(--muted); text-decoration: none; font-size: .94rem; }
+    .navlinks a:hover { color: var(--accent); }
+    .hero { padding: 92px 0 76px; }
+    .eyebrow {
+      display: inline-block; color: var(--accent-dark); background: #e9ecff;
+      border-radius: 999px; padding: 6px 13px; font-size: .83rem; font-weight: 700;
+    }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.7rem); line-height: 1.08; letter-spacing: -2px; margin: 20px 0; max-width: 780px; }
+    .hero p { color: var(--muted); font-size: 1.12rem; max-width: 680px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 12px 19px; border-radius: 10px;
+      text-decoration: none; font-weight: 700; border: 1px solid var(--accent);
+    }
+    .primary { color: white; background: var(--accent); }
+    .secondary { color: var(--accent-dark); background: white; }
+    section { padding: 62px 0; }
+    .section-title { font-size: 2rem; letter-spacing: -.8px; margin: 0 0 10px; }
+    .intro { color: var(--muted); max-width: 700px; margin: 0 0 28px; }
+    .grid { display: grid; grid-template-columns: repeat( auto-fit, minmax(230px, 1fr)); gap: 17px; }
+    .card {
+      background: var(--white); border: 1px solid var(--line); border-radius: 16px;
+      padding: 23px; box-shadow: 0 8px 28px rgba(25,35,70,.035);
+    }
+    .card h3 { margin: 0 0 8px; }
+    .card p { color: var(--muted); margin: 0; }
+    .taglist { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+    .tag { background: white; border: 1px solid var(--line); padding: 8px 12px; border-radius: 999px; font-size: .92rem; }
+    .project-label { color: var(--accent-dark); font-weight: 700; font-size: .82rem; text-transform: uppercase; letter-spacing: .6px; }
+    .contact { background: #eef0ff; }
+    footer { padding: 24px 0; color: var(--muted); font-size: .9rem; }
+    @media (max-width: 620px) {
+      nav { align-items: flex-start; padding: 17px 0; flex-direction: column; }
+      .navlinks { gap: 14px; }
+      .hero { padding: 65px 0 55px; }
+      section { padding: 48px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#home">Oben Helen</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <span class="eyebrow">Software Engineering Graduate</span>
+      <h1>Building practical skills through technology and creativity.</h1>
+      <p>
+        Hello, I'm Oben Helen, a Software Engineering graduate interested in
+        frontend development, AI-assisted content creation, and accurate digital
+        support. I enjoy learning new tools and using technology to solve problems.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View my projects</a>
+        <a class="btn secondary" href="#contact">Contact me</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <h2 class="section-title">About me</h2>
+        <p class="intro">
+          I completed a Higher National Diploma in Software Engineering in 2022
+          and a Bachelor's degree in Software Engineering in 2023. My studies
+          introduced me to programming, web development, databases, software
+          development principles, and problem-solving.
+        </p>
+        <div class="card">
+          <h3>Academic project</h3>
+          <p>
+            My final-year project focused on sign language recognition using
+            Python and TensorFlow Object Detection. It gave me practical exposure
+            to machine-learning concepts and applying software tools to a
+            real-world problem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Skills and tools</h2>
+        <p class="intro">Areas I have studied, practised, or am continuing to develop.</p>
+        <div class="taglist">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Python</span>
+          <span class="tag">TensorFlow Object Detection</span>
+          <span class="tag">Frontend development</span>
+          <span class="tag">AI content creation</span>
+          <span class="tag">Data entry</span>
+          <span class="tag">Microsoft Office</span>
+          <span class="tag">English communication</span>
+          <span class="tag">Problem-solving</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2 class="section-title">Selected projects</h2>
+        <p class="intro">A selection of academic and practice projects. Add links or screenshots as you prepare them.</p>
+        <div class="grid">
+          <article class="card">
+            <span class="project-label">Final-year project</span>
+            <h3>Sign Language Recognition</h3>
+            <p>Explored sign language recognition using Python and TensorFlow Object Detection.</p>
+          </article>
+          <article class="card">
+            <span class="project-label">Web development</span>
+            <h3>Responsive Website Projects</h3>
+            <p>Practised building web pages and layouts using HTML and CSS.</p>
+          </article>
+          <article class="card">
+            <span class="project-label">Frontend practice</span>
+            <h3>Interactive Web Exercises</h3>
+            <p>Worked on beginner frontend exercises, including interactive pages and website recreations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2 class="section-title">Let's connect</h2>
+        <p class="intro">I'm open to suitable entry-level opportunities, collaborations, and projects where I can contribute and continue learning.</p>
+        <div class="card">
+          <p><strong>Email:</strong> <a href="mailto:obenhelen71@gmail.com">obenhelen71@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> Not provided</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/Obenhelen" target="_blank" rel="noopener noreferrer">github.com/Obenhelen</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© <span id="year"></span> Oben Helen. All rights reserved.</div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
